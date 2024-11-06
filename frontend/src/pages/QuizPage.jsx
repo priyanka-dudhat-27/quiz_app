@@ -23,7 +23,7 @@ const QuizPage = () => {
     useEffect(() => {
         getQuizById();
         // eslint-disable-next-line
-    }, [id]);
+              }, [id]);
 
     const handleAnswerChange = (e) => {
         setAnswers({

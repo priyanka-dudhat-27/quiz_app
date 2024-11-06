@@ -2,7 +2,7 @@ import axios from "axios"
 
 class Api{
     constructor(){
-        this.baseUrl = `${import.meta.env.VITE_API_BASE_URL}`
+        this.baseUrl = "https://quiz-app-sfo4.onrender.com/api/quizzes"
     }
 
     listAllQuiz(){
