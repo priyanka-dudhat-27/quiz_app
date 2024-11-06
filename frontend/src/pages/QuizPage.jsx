@@ -10,7 +10,6 @@ const QuizPage = () => {
     const [answers, setAnswers] = useState({});
     const [currentQuestion, setCurrentQuestion] = useState(0);
 
-    // const apiInstance = new api();
     const getQuizById = async () => {
         try {
             const data = await api.listQuizById(id);
@@ -22,7 +21,8 @@ const QuizPage = () => {
     };
 
     useEffect(() => {
-        getQuizById(); 
+        getQuizById();
+        // eslint-disable-next-line
     }, [id]);
 
     const handleAnswerChange = (e) => {
