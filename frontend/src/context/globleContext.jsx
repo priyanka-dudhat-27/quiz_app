@@ -8,7 +8,7 @@ export const GlobleProvider = ({ children }) => {
     const getQuiz = async () => {
         try {
             const response = await api.listAllQuiz();
-            console.log("All Quiz :-", response.data);
+            console.log("All Quiz :-", response.data );
             setQuizzes(response.data);
         } catch (error) {
             console.log(error);
